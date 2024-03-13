@@ -23,10 +23,12 @@ const MyBigButton = ({ onSelectCategory, handleFilterPageClose, categoryId,onLoa
     };
 
     return (
-            <a onClick={()=>handleButtonClick()} {...props} className={cl.myBtn} href={`/page2/${categoryId}`}>
-                {children}
+            <a className={cl.ntclown} href={`http://localhost:5173/page2/${categoryId}`} onClick={() => handleButtonClick()}>
+                <button {...props} className={cl.myBtn}>
+                    {children}
+                </button>
             </a>
-    );
+);
 };
 
 
